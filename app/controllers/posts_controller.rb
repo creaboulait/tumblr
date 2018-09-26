@@ -23,7 +23,6 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-
 	end
 
 	def update
@@ -37,7 +36,7 @@ class PostsController < ApplicationController
 	end
 
 	def destroy
-		@item.destroy
+		@post.destroy
 		redirect_to root_path
 	end
 
