@@ -23,9 +23,17 @@ class PostsController < ApplicationController
 	end
 
 	def edit
+
 	end
 
 	def update
+		@post.update(post_params)
+
+		if @post.save
+			redirect_to @post
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy
