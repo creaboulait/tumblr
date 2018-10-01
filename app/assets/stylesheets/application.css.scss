@@ -2,17 +2,18 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
  *
  *= require_tree .
  *= require_self
  */
+
 @import 'normalize';
 
 html, body {
@@ -34,17 +35,17 @@ a {
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #88D0AD;
+	background: #FF7272;
 	padding: 7em 0 0 0;
-	border-right: 1px solid #b8e2fe;
+	border-right: 0.5px solid #b8e2fe;
 
 	ul {
 		list-style: none;
-		text-align: right;
+		text-align: center;
 		padding-right: 3em;
 		.category {
-			font-weight: 900;
-			font-size: 2.5em;
+			font-weight: 600;
+			font-size: 2.3em;
 			text-transform: uppercase;
 			color: #22747b;
 		}
@@ -186,7 +187,7 @@ a {
 						font-size: 1.0em;
 						text-transform: uppercase;
 					}
-					.comment_body {
+					.comment_description {
 						font-size: 1.2em;
 						margin: 0.2em 0 0 0;
 					}

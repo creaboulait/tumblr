@@ -3,7 +3,6 @@
   <head>
     <title>Tumblr</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Raleway:400,700' %>
@@ -48,9 +47,10 @@
         <%= content_tag(:div, msg, class:"alert") %>
       <% end %>
 
-    </div>
 
-    <%= yield %>
+      <%= yield %>
+
+    </div>
 
   </body>
 
